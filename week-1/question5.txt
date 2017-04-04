@@ -1,0 +1,4 @@
+5. What is a so called “branch” in Git terms and why would you use it?
+
+A branch allows you to isolate your work from other files and store your codes seperatly in a different 'branch'. 
+You can use it to keep all files seperate so you can go back to previous versions later.
