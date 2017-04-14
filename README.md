@@ -2,6 +2,7 @@
 Repository used for Dataprocessing
 
 Links to assessments
+
 Week 1:
 https://github.com/Adriaandeklerk/Dataprocessing/tree/master/Homework/week-1/Scraping
 
