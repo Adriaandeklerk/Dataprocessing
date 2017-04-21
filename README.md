@@ -1,6 +1,4 @@
-https://github.com/Adriaandeklerk/Dataprocessing/blob/master/index.html
-
-https://github.com/Adriaandeklerk/Dataprocessing
+https://adriaandeklerk.github.io/Dataprocessing/
 
 # Dataprocessing
 Repository used for Dataprocessing
