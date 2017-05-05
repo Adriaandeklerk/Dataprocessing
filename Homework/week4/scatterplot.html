@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="scatterplot.css">
+
+<body>
+  <h1><strong> Dataprocessing week 4 </strong></h1>
+          <h2><strong> Scatterplot</strong></h2>
+          <p> For this week's assingment of Dataprocessing, I made a scatterplot displaying
+          data from the Worldbank. In the chart below, the GDP and inflation can
+          be seen for each country. Additionally, each circle corresponds to
+          size of the largest city of the selected country. Countries with incomplete
+          data sets were excluded from this scatterplot. When you hover over a
+          circle all of the information is displayed in a tooltip.
+          Unfortunately, I wasn't able to create a correct legend. </p>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="scatterplot.js"></script>
+
+<svg id="legend" height="300" width="1550"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <g transform="scale(0.5)">
+    <image x="0" y="0" height="600" width="600" xlink:href="legend.svg"/>
+  </g>
+</svg>
+
+<p><i> Source: <a href="http://databank.worldbank.org/data/reports.aspx?source=world-development-indicators#" target="_blank">World bank </a> </i></p>
+<p><i> Made by: Adriaan de Klerk  </i></p>
+</html>

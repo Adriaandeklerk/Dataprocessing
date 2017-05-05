@@ -1,0 +1,32 @@
+body {
+  font: 14px Georgia;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+}
+
+.tooltip {
+  position: absolute;
+  background: DarkGrey;
+  font: 12px Georgia;
+  color: #FFFFFF;
+  display: inline;
+}
+
+.tooltip .tooltiptext {
+    width: 200px;
+    bottom: 100%;
+    left: 70%;
+    margin-left: -60px;
+
+  p {
+    font: 14px Georgia;
+  }
+  h1 {
+    font:32px Georgia;
+  }
+  h2 {
+    font:18px Georgia;
+  }

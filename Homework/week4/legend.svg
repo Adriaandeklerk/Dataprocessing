@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 179 295.5" style="enable-background:new 0 0 179 295.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#020203;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#1E1E1C;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#1E1E1C;stroke-miterlimit:10;}
+  #kleur1{fill:#E377C2;stroke:#1E1E1C;stroke-miterlimit:10;}
+  #kleur2{fill:#FE7F0E;stroke:#1E1E1C;stroke-miterlimit:10;}
+  #kleur3{fill:#8C564A;stroke:#1E1E1C;stroke-miterlimit:10;}
+  #kleur4{fill:#9467BC;stroke:#1E1E1C;stroke-miterlimit:10;}
+  #kleur5{fill:#2BA02D;stroke:#1E1E1C;stroke-miterlimit:10;}
+  #kleur6{fill:#D52728;stroke:#1E1E1C;stroke-miterlimit:10;}
+  #kleur7{fill:#1F78B0;stroke:#1E1E1C;stroke-miterlimit:10;}
+
+
+</style>
+<rect id="canvas" x="1.8" y="1.8" class="st0" width="175.1" height="291.4"/>
+<rect id="kleur1" x="13" y="13.5" class="st1" width="21" height="29"/>
+<rect id="kleur2" x="13" y="53" class="st1" width="21" height="29"/>
+<rect id="kleur3" x="13" y="93" class="st1" width="21" height="29"/>
+<rect id="kleur4" x="13" y="133" class="st1" width="21" height="29"/>
+<rect id="kleur5" x="13" y="173" class="st1" width="21" height="29"/>
+<rect id="kleur6" x="13" y="217" class="st1" width="21" height="29"/>
+<rect id="kleur7" x="13" y="257" class="st1" width="21" height="29"/>
+
+<rect id="tekst1" x="46.5" y="13.5" class="st2" width="119.1" height="29"/>
+<rect id="tekst2" x="46.5" y="53" class="st2" width="119.1" height="29"/>
+<rect id="tekst3" x="46.5" y="93" class="st2" width="119.1" height="29"/>
+<rect id="tekst4" x="46.5" y="133" class="st2" width="119.1" height="29"/>
+<rect id="tekst5" x="46.5" y="173" class="st2" width="119.1" height="29"/>
+<rect id="tekst6" x="46.5" y="217" class="st2" width="119.1" height="29"/>
+<rect id="tekst7" x="46.5" y="257" class="st2" width="119.1" height="29"/>
+
+<text x="52" y="33.5" font-family="Verdana" font-size="9">
+Smaller than 100.000</text>
+<text x="52" y="73.5" font-family="Verdana" font-size="9">
+100.000 - 1.000.000</text>
+<text x="52" y="113.5" font-family="Verdana" font-size="9">
+1.000.000 - 5.000.000</text>
+<text x="52" y="153.5" font-family="Verdana" font-size="9">
+5.000.000 - 10.000.000</text>
+<text x="50" y="193.5" font-family="Verdana" font-size="9">
+10.000.000 - 20.000.000</text>
+<text x="50" y="237" font-family="Verdana" font-size="9">
+20.000.000 - 30.000.000</text>
+<text x="50" y="276" font-family="Verdana" font-size="9">
+Greater than 30.000.000</text>
+
+</svg>
