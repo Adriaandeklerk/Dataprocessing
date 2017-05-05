@@ -73,8 +73,8 @@ var margin = {top: 30, right: 30, bottom: 40, left: 50},
         .append("text")
           .attr("class", "label")
           .attr("transform", "rotate(-90)")
-          .attr("y", 6)
-          .attr("dy", ".71em")
+          .attr("y", 8)
+          .attr("dy", ".75em")
           .style("text-anchor", "end")
           .text("Inflation");
 
