@@ -14,10 +14,6 @@
   #kleur6{fill:#005824;stroke:#1E1E1C;stroke-miterlimit:10;}
   #kleur7{fill:#d3d3d3;stroke:#1E1E1C;stroke-miterlimit:10;}
 
-  #tekst1{
-  <text x="0" y="35" font-family="Verdana" font-size="35">
-    Hello, out there
-  </text>}
 
 </style>
 <rect id="canvas" x="1.8" y="1.8" class="st0" width="175.1" height="291.4"/>
