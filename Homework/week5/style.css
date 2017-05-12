@@ -1,0 +1,24 @@
+/* Css file for dataprocessing week 5
+Design for a multiple line chart
+Adriaan de Klerk - 10323929 */
+
+body {
+  font: 14px Georgia;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: #F1F3F3;
+  stroke: #green;
+  stroke-width: 5px;
+}
+
+.hover-line {
+  stroke: #6F257F;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}
