@@ -165,7 +165,7 @@ var tooltip = d3.select("body")
           .attr("x2", 980)
           .attr("y2", 75);
 
-      var focus = svg.append("g")
+      var focus = g.append("g")
           .attr("class", "focus")
           .style("display", "none");
 
