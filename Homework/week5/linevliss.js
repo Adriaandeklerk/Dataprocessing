@@ -165,10 +165,12 @@ var tooltip = d3.select("body")
           .attr("x2", 980)
           .attr("y2", 75);
 
+      // Add focus for tooltip
       var focus = g.append("g")
           .attr("class", "focus")
           .style("display", "none");
 
+      // Create a line that follows hovering tooltip
       focus.append("line")
           .attr("class", "x-hover-line hover-line")
           .attr("y1", 0)
@@ -179,6 +181,7 @@ var tooltip = d3.select("body")
           .attr("x1", width)
           .attr("x2", width);
 
+      // Add a circle that is placed on the mouselocation
       focus.append("circle")
           .attr("r", 7.5);
 
@@ -186,6 +189,7 @@ var tooltip = d3.select("body")
           .attr("x", 15)
         	.attr("dy", ".31em");
 
+      // Add a rect on top of the graphs with mouse interactivity
       svg.append("rect")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
           .attr("class", "overlay")
@@ -195,6 +199,8 @@ var tooltip = d3.select("body")
           .on("mouseout", function() { focus.style("display", "none"); })
           .on("mousemove", mousemove);
 
+      // Function that should return the tooltip when mouse is placed on
+      // the element (but is not working)
       function mousemove() {
         focus.select("text").text(function(d) { return d.average; });
         focus.select(".x-hover-line").attr("y2", height - y(d.average));
