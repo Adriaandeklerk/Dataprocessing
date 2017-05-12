@@ -61,8 +61,6 @@ var tooltip = d3.select("body")
       .call(d3.axisBottom(x))
       .style("font-family", "Georgia")
     .append("text")
-    .select(".domain")
-      .remove();
 
     // Add label to x-axis
     svg.append("text")
@@ -129,12 +127,13 @@ var tooltip = d3.select("body")
                  .attr("class", "legend")
                  .style("font-weight", "bold")
                  .text("Legend:");
+      
       svg.append("text")
                 .attr("x", 1050)
                 .attr("y", 60)
                 .attr("class", "legend")
                 .text("Maximum temperature");
-      g.append("line")
+      svg.append("line")
           .style("stroke", "red")
           .attr("stroke-width", 1.5)
           .attr("x1", 950)
@@ -146,7 +145,7 @@ var tooltip = d3.select("body")
                 .attr("x", 1050)
                 .attr("y", 80)
                 .text("Average temperature");
-      g.append("line")
+      svg.append("line")
           .style("stroke", "orange")
           .attr("stroke-width", 1.5)
           .attr("x1", 950)
@@ -158,7 +157,7 @@ var tooltip = d3.select("body")
                 .attr("x", 1050)
                 .attr("y", 100)
                 .text("Minimum temperature");
-      g.append("line")
+      svg.append("line")
           .style("stroke", "steelblue")
           .attr("stroke-width", 1.5)
           .attr("x1", 950)
@@ -166,7 +165,7 @@ var tooltip = d3.select("body")
           .attr("x2", 980)
           .attr("y2", 75);
 
-      var focus = g.append("g")
+      var focus = svg.append("g")
           .attr("class", "focus")
           .style("display", "none");
 
