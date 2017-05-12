@@ -3,21 +3,24 @@
 // Adriaan de Klerk - 10323929
 // Design for a multiseries line graph showing temperatures in two cities
 
+// Set dimensions for svg element
 var svg = d3.select("svg"),
     margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var parseTime = d3.timeParse("%Y%m%d")
-    bisectDate = d3.bisector(function(d) { return d.date; }).left;
+// Create timeParse variable to format dates
+var parseTime = d3.timeParse("%Y%m%d")
 
+// Scale x and y axis
 var x = d3.scaleTime()
     .rangeRound([0, width]);
 
 var y = d3.scaleLinear()
     .rangeRound([height, 0]);
 
+// Define lines and corresponding data
 var line1 = d3.line()
     .x(function(d) { return x(parseTime(d.date)); })
     .y(function(d) { return y(d.average); });
@@ -30,21 +33,14 @@ var line3 = d3.line()
     .x(function(d) { return x(parseTime(d.date)); })
     .y(function(d) { return y(d.max); });
 
-    var valueline = d3.line()
-        .x(function(d) { return x(d.date); })
-        .y(function(d) { return y(d.average); });
-
 // Create tooltip element
 var tooltip = d3.select("body")
     .append("div")
     .style("position", "absolute")
-    .style("z-index", "10")
     .style("visibility", "hidden")
     .style("background", "#000")
-    .text("a simple tooltip");
 
-
-  // Get the data
+  // Load the json file
   d3.json("vlissingengoed.json", function(error, data) {
         // For each category, convert string format to numbers
         data.forEach(function(d) {
@@ -52,9 +48,10 @@ var tooltip = d3.select("body")
           d["min"] = +d["min"];
           d["max"] = +d["max"];
           return d;
-      }, function(error, data) {
+      }, function(error, data) { // Check for errors
         if (error) throw error;})
 
+  // Scale domains with data set
   x.domain(d3.extent(data, function(d) { return parseTime(d.date); }));
   y.domain(d3.extent([d3.min(data, function(d) { return d.min;}), d3.max(data, function(d) {return d.max;})]));
 
@@ -75,16 +72,6 @@ var tooltip = d3.select("body")
       .style("font-size", "10px")
       .text("Months");
 
-    // Add the title
-    svg.append("text")
-        .attr("x", (width / 2))
-        .attr("y", 30)
-        .attr("text-anchor", "middle")
-        .style("font-size", "16px")
-        .style("text-decoration", "underline")
-        .style("font-family", "Georgia")
-        .text("Temperature in Vlissingen and Rotterdam in 2016");
-
   // Add y-axis
   g.append("g")
       .call(d3.axisLeft(y))
@@ -96,6 +83,16 @@ var tooltip = d3.select("body")
       .attr("dy", "0.71em")
       .attr("text-anchor", "end")
       .text("Temperature in ºC(0,1)");
+     
+      // Add the title
+    svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 30)
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .style("text-decoration", "underline")
+        .style("font-family", "Georgia")
+        .text("Temperature in Vlissingen and Rotterdam in 2016");
 
   // Draw different lines for average, min and max temperature
   g.append("path")
