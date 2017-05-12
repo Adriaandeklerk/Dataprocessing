@@ -3,20 +3,24 @@
 // Adriaan de Klerk - 10323929
 // Design for a multiseries line graph showing temperatures in two cities
 
+// Set dimensions for svg element
 var svg = d3.select("svg"),
     margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var parseTime = d3.timeParse("%Y%m%d");
+// Create timeParse variable to format dates
+var parseTime = d3.timeParse("%Y%m%d");
 
+// Scale x and y axis
 var x = d3.scaleTime()
     .rangeRound([0, width]);
 
 var y = d3.scaleLinear()
     .rangeRound([height, 0]);
 
+// Define lines and corresponding data
 var line1 = d3.line()
     .x(function(d) { return x(parseTime(d.date)); })
     .y(function(d) { return y(d.average); });
@@ -29,7 +33,7 @@ var line3 = d3.line()
     .x(function(d) { return x(parseTime(d.date)); })
     .y(function(d) { return y(d.max); });
 
-  // Get the data
+  // Get the json data
   d3.json("rotterdamgoed.json", function(error, data) {
         // For each category, convert string format to numbers
         data.forEach(function(d) {
@@ -37,11 +41,12 @@ var line3 = d3.line()
           d["min"] = +d["min"];
           d["max"] = +d["max"];
           return d;
-      }, function(error, data) {
+      }, function(error, data) { // Check for errors
         if (error) throw error;})
 
-  x.domain(d3.extent(data, function(d) { return parseTime(d.date); }));
-  y.domain(d3.extent([d3.min(data, function(d) { return d.min;}), d3.max(data, function(d) {return d.max;})]));
+    // Scale domains with data set
+    x.domain(d3.extent(data, function(d) { return parseTime(d.date); }));
+    y.domain(d3.extent([d3.min(data, function(d) { return d.min;}), d3.max(data, function(d) {return d.max;})]));
 
   // Add the x-axis
   g.append("g")
