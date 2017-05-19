@@ -1,3 +1,7 @@
+// Dataprocessing week 6
+// Design for a linked view d3 map
+// Adriaan de Klerk - 10323929
+
 // set dimensions for scatterplot
 var margin = {top: 30, right: 30, bottom: 40, left: 50},
     width = 1400 - margin.left - margin.right,
