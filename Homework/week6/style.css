@@ -1,0 +1,28 @@
+path {
+stroke:grey;
+stroke-width: 0.8px;
+}
+
+body {
+font-family: Georgia, sans-serif;
+}
+
+.hover {
+  fill: red;
+}
+
+.legend {
+font-size: 12px;
+}
+
+div.tooltip {
+position: absolute;
+text-align: center;
+width: 150px;
+height: 26px;
+padding: 3px;
+font-size: 12px;
+background: #F8F8FF;
+border: 3px;
+pointer-events: none;
+}
