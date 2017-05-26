@@ -17,5 +17,7 @@ Links to assessments
       <li>To <a href="https://adriaandeklerk.github.io/Dataprocessing/Homework/week5/index.html">Week 5 webpage</a>
       <li>To <a href="https://github.com/Adriaandeklerk/Dataprocessing/tree/master/Homework/week6/">Week 6 repository</a>
       <li>To <a href="https://adriaandeklerk.github.io/Dataprocessing/Homework/week6/index.html">Week 6 webpage</a>
+      <li>To <a href="https://github.com/Adriaandeklerk/Dataprocessing/tree/master/Homework/week7/">Week 7 repository</a>
+      <li>To <a href="https://adriaandeklerk.github.io/Dataprocessing/Homework/week7/index.html">Week 7 webpage</a>
     </ul>
  </html>
