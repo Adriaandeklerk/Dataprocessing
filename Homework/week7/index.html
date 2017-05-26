@@ -1,0 +1,236 @@
+<!-- Html file for dataprocessing week 7
+Design for a linked view d3 map
+Adriaan de Klerk - 10323929
+Bootstrap source: https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Dataprocessing ending project </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="description" content="">
+            <meta name="author" content="">
+              <script src="https://d3js.org/d3.v3.min.js"></script>
+              <script src="https://d3js.org/topojson.v1.min.js"></script>
+              <script src="https://d3js.org/queue.v1.min.js"></script>
+              <!-- Bootstrap Core CSS -->
+              <link href="css/bootstrap.min.css" rel="stylesheet">
+                <!-- Custom CSS -->
+                <link href="css/stylish-portfolio.css" rel="stylesheet">
+                  <!-- Extra CSS -->
+                  <link rel="stylesheet" type="text/css" href="style.css">
+                    <!-- Custom Fonts -->
+                    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+                      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+                      </head>
+                      <body>
+                        <!-- Navigation -->
+                        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                        <nav id="sidebar-wrapper">
+                          <ul class="sidebar-nav">
+                            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+                              <i class="fa fa-times"></i>
+                            </a>
+                            <li class="sidebar-brand">
+                              <a href="#top" onclick=$("#menu-close").click();>Dataprocessing</a>
+                            </li>
+                            <li>
+                              <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                            </li>
+                            <li>
+                              <a href="#story" onclick=$("#menu-close").click();>The Story</a>
+                            </li>
+                            <li>
+                              <a href="#map" onclick=$("#menu-close").click();>Assignment 7</a>
+                            </li>
+                            <li>
+                              <a href="#links" onclick=$("#menu-close").click();>Links</a>
+                            </li>
+                            <li>
+                              <a href="#info" onclick=$("#menu-close").click();>Info</a>
+                            </li>
+                          </ul>
+                        </nav>
+                        <!-- Header -->
+                        <header id="top" class="header">
+                          <div class="text-vertical-center">
+                            <h1>Dataprocessing week 7</h1>
+                            <h3>Final assignment: Linked view map in d3</h3>
+                            <br>
+                              <a href="#story" class="btn btn-dark btn-lg">Go to assignment</a>
+                            </div>
+                          </header>
+                          <!-- About -->
+                          <section id="story" class="story">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-lg-12 text-center">
+                                  <h2>The Story:</h2>
+                                  <p class="lead">
+                      For this week's assingment of Dataprocessing, I made an interactive
+                      choreopleth map of the USA in d3.js. It shows the total earnings
+                      per county in 2001 and a linked barchart of all counties.
+                      The data was acquired from U.S. Census.
+                                    <br>
+                                    </p>
+                                  </div>
+                    The map shows an overview of the total earnings of each
+                    county in 2001. The colour in the map corresponds with the
+                    total amount of money that was made. Brown represents a much
+                    lower value than green.
+                    It can be seen that counties in the middle of the U.S. earn far less
+                    money when compared to east and west coast of the country.
+                    An explanation for this can be that the middle of the U.S. is not as
+                    populated as the very urbanized coastal regions. The population of the
+                    U.S. is largely concentrated on the east and west coast
+                    of the country. The higher earnings in these areas reflect
+                    this population distribution.
+                                  <br>
+                                    <br>
+                    On top of that, another explanation for this division could
+                    be that the middle of the country is more rural than urban,
+                    and urban centers are generally speaking richer.
+                    This is known as the urban rural income gap.
+                                      <br>
+                                        <br>
+                    Genres used: annotated chart and choreopleth map.
+                                        </a>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </section>
+                                <!-- Charts -->
+                                <section id="map" class="portfolio">
+                                  <div class="container-fluid" id="chart1" width="900" height="600"></div>
+                                  <select id = "opts">
+                                    <option value="ds1" selected="selected">2001</option>
+                                    <option value="rate2010">2010</option>
+                                  </select>
+                                  <div class="container-fluid" id="chart2" width="900" height="600"></div>
+                                  <script src="map.js"></script>
+                                </div>
+                                <p>
+                                  <i> Source:
+                                    <a href="https://www.census.gov/support/USACdataDownloads.html#EAN" target="_blank">U.S. Census</a>
+                                  </i>
+                                </p>
+                                <p>
+                                  <i> Adriaan de Klerk
+                                  </a>
+                                </i>
+                              </p>
+                            </section>
+                            <!-- Links -->
+                            <section id="links" class="portfolio">
+                              <aside class="call-to-action bg-primary">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                      <h3>Dataprocessing repository links</h3>
+                                      <a target="_blank" href="https://github.com/Adriaandeklerk/Dataprocessing" class="btn btn-lg btn-dark">Github</a>
+                                      <a href="#top" class="btn btn-lg btn-dark">Website week 7</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </aside>
+                            </section>
+                            <!-- Extra info -->
+                            <section id="info" class="portfolio">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-lg-10 col-lg-offset-1 text-center">
+                                    <h4>
+                                      <strong>Info</strong>
+                                    </h4>
+                                    <p>Student: Adriaan de Klerk
+
+                                      <br>Student number: 10323929
+                                      </p>
+                                      <ul class="list-unstyled">
+                                        <li>
+                                          <i class="fa fa-envelope-o fa-fw"></i>
+                                          <a href="mailto:ajhdeklerk@gmail.com">ajhdeklerk@gmail.com</a>
+                                        </li>
+                                      </ul>
+                                      <br>
+                                        <ul class="list-inline">
+                                          <li>
+                                            <a target="_blank" href="https://www.facebook.com/ajhdeklerk">
+                                              <i class="fa fa-facebook fa-fw fa-3x"></i>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                        <hr class="small">
+                                          <p class="text-muted">Copyright &copy; 2017</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <a id="to-top" href="#top" class="btn btn-dark btn-lg">
+                                      <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+                                    </a>
+                                  </section>
+                                  <!-- jQuery -->
+                                  <script src="js/jquery.js"></script>
+                                  <!-- Bootstrap Core JavaScript -->
+                                  <script src="js/bootstrap.min.js"></script>
+                                  <!-- Custom Theme JavaScript -->
+                                  <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    </script>
+<p class="lead">This theme features some wonderful photography courtesy of
+<a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.
+</p>
+</body>
+</html>
