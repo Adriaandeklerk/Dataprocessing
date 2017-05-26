@@ -33,8 +33,8 @@ var path = d3.geo.path()
 
 // load data files for US map and data
 queue()
-    .defer(d3.json, "us.json")
-    .defer(d3.csv, "data2.csv")
+    .defer(d3.json, "data/us.json")
+    .defer(d3.csv, "data/data2.csv")
     .await(loading);
 
 // function for checking the files and parsing data
