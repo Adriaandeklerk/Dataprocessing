@@ -1,0 +1,79 @@
+/* Css file for dataprocessing week 7
+Design for a linked d3 map
+Adriaan de Klerk - 10323929 */
+
+.axis path, .axis line {
+  fill: #e34a33;
+  stroke: #fff;
+}
+
+.axis text {
+  font-size: 13px;
+}
+
+.bar {
+  fill: #fdbb84;
+}
+
+.bar:hover {
+  fill: #fee8c8;
+}
+
+svg text.label {
+  fill: black;
+  font: 14px;
+  font-weight: 300;
+  text-anchor: middle;
+}
+
+#chartID {
+  min-width: 531px;
+}
+
+#chart1 {
+  float: left;
+}
+
+#chart2 {
+  float: middle;
+}
+
+path {
+  stroke: grey;
+  stroke-width: 0.8px;
+}
+
+body {
+  font-family: Georgia;
+}
+
+.hover {
+  fill: red;
+}
+
+.legend {
+  font-size: 12px;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 180px;
+  height: 26px;
+  padding: 3px;
+  font-size: 12px;
+  background: #F8F8FF;
+  border: 3px;
+  pointer-events: none;
+}
+
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 14px;
+  text-align: center;
+}
